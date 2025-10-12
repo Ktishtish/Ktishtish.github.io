@@ -17,5 +17,5 @@ author_profile: true
   - **CyberShujaa** - Security Analyst -(ongoing)
 
 ## Additional Skills 
-
+ - **Junior penetration testing**
    
