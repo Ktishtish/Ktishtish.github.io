@@ -11,7 +11,7 @@ author_profile: true
    Awaiting graduation - BSc Information, Security and Forensics - KCA University, Kenya
 
 ## Certifications
-   **AWS Cloud Practitioner** - KCA university
-   **CCNA**
-   **CyberShujaa** - Security Analyst -(ongoing)
+  - **AWS Cloud Practitioner** - KCA university
+    - **CCNA**
+  - **CyberShujaa** - Security Analyst -(ongoing)
    
