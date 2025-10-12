@@ -13,7 +13,7 @@ author_profile: true
 ## Certifications
   - **AWS Cloud Practitioner** - KCA university
   - **CIPIT Data Protection Course** - Strathmore University
-    - **CCNA**
+-  **CCNA**
   - **CyberShujaa** - Security Analyst -(ongoing)
 
 ## Additional Skills 
