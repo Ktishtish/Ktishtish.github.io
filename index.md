@@ -8,4 +8,4 @@ author_profile: true
 # Curriculum Vitae - Keziah Tisher
 ----
 ## Education 
-
+   Awaiting graduation - BSc Information, Security and Forensics - KCA University, Kenya
