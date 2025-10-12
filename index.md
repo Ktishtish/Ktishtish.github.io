@@ -9,7 +9,7 @@ author_profile: true
 ----
 ## Education 
    Awaiting graduation - BSc Information, Security and Forensics - KCA University, Kenya
-
+---
 ## Certifications
   - **AWS Cloud Practitioner** - KCA university
     - **CCNA**
