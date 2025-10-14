@@ -1,6 +1,6 @@
 ---
-title: "Posts by Category"
-layout: categories
-permalink: /categories/
+title: "walkthroughs"
+layout: walkthroughs
+permalink: /walkthroughs/
 author_profile: true
 ---
