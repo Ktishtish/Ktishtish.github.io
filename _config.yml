@@ -56,22 +56,22 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Keziah Tisher"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Passionate about ethical hacking, network defense, and digital forensics"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "linkedIn"
+      icon: "fab fa-link"
+      url: "https://www.linkedin.com/in/keziah-tish"
+    - #label: "Twitter"
+     # icon: "fab fa-fw fa-twitter-square"
+     # url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/Ktishtish.github.io"
+    - # label: "Instagram"
+      #icon: "fab fa-fw fa-instagram"
+      #url: "https://instagram.com/"
 
 footer:
   links:
