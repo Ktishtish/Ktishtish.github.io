@@ -18,4 +18,7 @@ author_profile: true
 
 ## Additional Skills 
  - **Junior penetration testing**
-   
+ - **O/S - Windows and Linux**
+ - **Digital Forensics Analysis**
+ - **Security tools- Wireshark/Metasploit/Nmap**
+ - **Proficient in English/Swahili & B1 - French**  
