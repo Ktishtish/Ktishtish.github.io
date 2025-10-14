@@ -7,7 +7,7 @@
 ---
 layout: splash
 author_profile: true
-title: "Curriculum Vitae - Keziah Tisher"
+# Curriculum Vitae - Keziah Tisher
 ---
 
 ## Education 
