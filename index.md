@@ -11,7 +11,7 @@ author_profile: true
 ---
 
 ## Education 
-- Awaiting graduation — **BSc Information, Security and Forensics**, KCA University, Kenya
+— BSc Information, Security and Forensics- KCA University, Kenya -*First Class Honours* 
 
 ---
 
