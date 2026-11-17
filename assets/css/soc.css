@@ -752,6 +752,86 @@ code, .mono { font-family: var(--mono); }
   .dhead .hint { margin-left: 0; }
 }
 
+/* Badges & certificates gallery — images appear when uploaded */
+.badge-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.badge-slot {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  text-align: center;
+  padding: 1rem 0.85rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.badge-slot.is-ready {
+  display: flex;
+}
+
+.badge-slot:hover {
+  transform: translateY(-3px);
+  border-color: rgba(45, 212, 191, 0.35);
+  color: inherit;
+}
+
+.badge-slot img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: rgba(5, 7, 11, 0.45);
+  padding: 0.35rem;
+}
+
+.badge-slot span {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.cert-card .cred-media {
+  display: none;
+  margin: 0 0 0.85rem;
+}
+
+.cert-card .cred-media.is-ready {
+  display: block;
+}
+
+.cert-card .cred-media img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: rgba(5, 7, 11, 0.45);
+  border: 1px solid var(--line);
+  padding: 0.5rem;
+}
+
+.upload-hint {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px dashed rgba(45, 212, 191, 0.35);
+  border-radius: var(--radius);
+  background: var(--accent-dim);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.upload-hint code {
+  color: var(--accent);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .avatar-ring, .ticker-track, .status-dot, .reveal { animation: none !important; transition: none !important; }

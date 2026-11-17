@@ -35,6 +35,12 @@ Open `http://127.0.0.1:8000`.
 
 ## Updating
 
-Edit the HTML pages directly. Drop issuer badge images into `assets/images/badges/` and link them from `certifications.html`. Replace `assets/images/bio-photo.jpg` or the CV PDF as needed.
+Edit the HTML pages directly. Replace `assets/images/bio-photo.jpg` or `assets/cv/keziah-tisher-cv.pdf` as needed.
+
+### Badges & certificates (upload anytime)
+
+1. Put **badge** PNGs in `assets/images/badges/` using the filenames in that folder’s README.
+2. Put **certificate** images in `assets/images/certificates/` using the filenames in that folder’s README.
+3. Commit and push — the Certifications page shows them automatically (no HTML edits required).
 
 After merge to `master`, GitHub Pages publishes from the repository root.

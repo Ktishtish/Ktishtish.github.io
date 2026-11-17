@@ -32,6 +32,18 @@
     });
   });
 
+  // Show badge/certificate slots only when their images successfully load
+  document.querySelectorAll("[data-cred-media]").forEach((wrap) => {
+    const img = wrap.querySelector("img");
+    if (!img) return;
+    const markReady = () => wrap.classList.add("is-ready");
+    if (img.complete && img.naturalWidth > 0) markReady();
+    else {
+      img.addEventListener("load", markReady);
+      img.addEventListener("error", () => wrap.remove());
+    }
+  });
+
   const reveals = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {
     reveals.forEach((el) => el.classList.add("is-visible"));
