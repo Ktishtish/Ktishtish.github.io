@@ -1,9 +1,13 @@
 main:
+  - title: "Portfolio"
+    url: /
   - title: "Walkthroughs"
     url: /posts/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "Certifications"
+    url: /certificates.html
   - title: "About"
     url: /about/
