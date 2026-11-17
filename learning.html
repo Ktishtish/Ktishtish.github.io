@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>~/Learning · Keziah Tisher</title>
+  <meta name="description" content="Currently learning — CDPSE, cloud/container skills, AppSec labs, and AI-assisted SOC workflows.">
+  <meta name="theme-color" content="#0b0f19">
+  <link rel="icon" href="assets/images/bio-photo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/soc.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="status"><span class="status-dot"></span> Online · <a class="brand-handle" href="./">Ktishtish</a></div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="term-nav">Menu</button>
+      <nav id="term-nav" class="term-nav" aria-label="Primary">
+        <a href="./" data-path="/">$HOME</a>
+        <a href="whoami.html" data-path="/whoami.html">$ whoami</a>
+        <a href="experience.html" data-path="/experience.html">~/Experience</a>
+        <a href="projects.html" data-path="/projects.html">~/Projects</a>
+        <a href="certifications.html" data-path="/certifications.html">~/Certifications</a>
+        <a href="learning.html" data-path="/learning.html">~/Learning</a>
+        <a href="contact.html" data-path="/contact.html" class="cta">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="shell">
+    <header class="page-hero" id="main">
+      <p class="path">// learning</p>
+      <h1>Currently learning</h1>
+      <p class="lead">Active credentials, labs, and self-directed study — privacy engineering, infrastructure security, automation, and AI-assisted defence.</p>
+    </header>
+
+    <section class="section reveal">
+      <div class="feed">
+        <article class="project-card">
+          <div class="meta"><span class="pill warn">In progress</span><span>Credential</span><span>Ongoing</span></div>
+          <h3>Certified Data Protection Solutions Engineer (CDPSE)</h3>
+          <p>Pursuing CDPSE to deepen privacy engineering, data protection solution design, and governance implementation skills that complement current DPIA/ROPA advisory work.</p>
+          <ul style="margin:0 0 0.75rem;padding-left:1.15rem;color:var(--muted)">
+            <li>Privacy-by-design solution thinking</li>
+            <li>Data protection engineering practices</li>
+            <li>Governance implementation depth</li>
+          </ul>
+          <div class="tags"><span class="tag-chip">CDPSE</span><span class="tag-chip">privacy</span><span class="tag-chip">engineering</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="meta"><span class="pill blue">Pursuing</span><span>Self-directed</span><span>Infrastructure</span></div>
+          <h3>Infrastructure security, automation &amp; containers</h3>
+          <p>Expanding expertise in infrastructure security and automation, with foundational containerization concepts from AWS training and interest in practical Docker and Kubernetes skills.</p>
+          <ul style="margin:0 0 0.75rem;padding-left:1.15rem;color:var(--muted)">
+            <li>Secure cloud and infrastructure patterns</li>
+            <li>Python / Bash workflow automation</li>
+            <li>Container fundamentals → hands-on practice</li>
+          </ul>
+          <div class="tags"><span class="tag-chip">AWS</span><span class="tag-chip">Docker</span><span class="tag-chip">Kubernetes</span><span class="tag-chip">automation</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="meta"><span class="pill warn">In progress</span><span>Project lab</span><span>Authorized targets only</span></div>
+          <h3>Web Application Vulnerability Assessment</h3>
+          <p>End-to-end assessment methodology using Nmap and OWASP ZAP against deliberately vulnerable lab applications, including risk classification and remediation reporting.</p>
+          <ul style="margin:0 0 0.75rem;padding-left:1.15rem;color:var(--muted)">
+            <li>Recon → mapping → analysis → validation</li>
+            <li>Evidence collection and business-readable reporting</li>
+            <li>OWASP-informed findings narrative</li>
+          </ul>
+          <div class="tags"><span class="tag-chip">OWASP ZAP</span><span class="tag-chip">Nmap</span><span class="tag-chip">reporting</span></div>
+          <a class="card-link" href="https://github.com/Ktishtish/FUTURE_CS_01" target="_blank" rel="noopener noreferrer">Track progress on GitHub →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="meta"><span class="pill blue">Pursuing</span><span>Exploration</span><span>SOCWatch lab</span></div>
+          <h3>AI &amp; Security Operations</h3>
+          <p>Applying AI assistance (including GPT, Claude, and Cursor) to SOC triage order, containment decisions, MITRE mapping, and playbook coaching inside simulated IR labs.</p>
+          <ul style="margin:0 0 0.75rem;padding-left:1.15rem;color:var(--muted)">
+            <li>Human-in-the-loop analyst coaching</li>
+            <li>Playbook-driven response practice</li>
+            <li>Research and productivity workflows with LLMs</li>
+          </ul>
+          <div class="tags"><span class="tag-chip">AI</span><span class="tag-chip">SOC</span><span class="tag-chip">IR</span></div>
+          <a class="card-link" href="https://github.com/Ktishtish/SOC-operations1" target="_blank" rel="noopener noreferrer">Explore SOCWatch →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="dhead"><span class="tag">// completed-recently</span><h2>Recently completed learning</h2></div>
+      <div class="grid-3">
+        <article class="skill-card"><h3>Cyber Shujaa — Security Analyst</h3><p>Completed 2026 security analyst pathway.</p></article>
+        <article class="skill-card"><h3>CTFRoom Kenya — SOC Operations</h3><p>Completed SOC operations credential (2026).</p></article>
+        <article class="skill-card"><h3>ITU / atingi / CIPIT / IBM / AWS / CCNA</h3><p>See the full credentials list on Certifications.</p></article>
+      </div>
+      <p style="margin-top:1rem"><a class="card-link" href="certifications.html">Open certifications &amp; badge wall →</a></p>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Keziah Tisher</p>
+      <div class="footer-links">
+        <a href="./">$HOME</a>
+        <a href="certifications.html">certs</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/particles.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

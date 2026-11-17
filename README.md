@@ -1,27 +1,46 @@
-# Minimal Mistakes remote theme starter
+# Keziah Tisher — Cybersecurity Portfolio
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Visually rich static GitHub Pages site (no Jekyll / no Minimal Mistakes):
 
-Contains basic configuration to get you a site with:
+**[https://ktishtish.github.io](https://ktishtish.github.io)**
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+Inspired by modern SOC-style portfolios (terminal navigation, metrics, activity feed, deep multi-page detail).
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+## Pages
 
----
+| Path | Content |
+|:---|:---|
+| `index.html` | Hero, metrics, capability snapshot, recent activity, highlight certs, contact |
+| `whoami.html` | Full profile, skill levels, toolchains, education, languages |
+| `experience.html` | ODPC internship timeline + education |
+| `projects.html` | Detailed project writeups + GitHub links |
+| `certifications.html` | Credentials by category + badge slot |
+| `learning.html` | Currently learning / pursuing |
+| `contact.html` | Email, LinkedIn, GitHub, CV |
 
-## Troubleshooting
+## Stack
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+- Plain HTML / CSS / JS
+- `.nojekyll` so GitHub Pages serves files as-is
+- Particles background, tilt cards, reveal-on-scroll
+- CV: `assets/cv/keziah-tisher-cv.pdf`
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+## Local preview
+
+```bash
+python3 -m http.server 8000 --bind 127.0.0.1
+```
+
+Open `http://127.0.0.1:8000`.
+
+## Updating
+
+Edit the HTML pages directly. Replace `assets/images/bio-photo.jpg` or `assets/cv/keziah-tisher-cv.pdf` as needed.
+
+### Badges & certificates (upload anytime)
+
+1. Put **badge** PNGs in `assets/images/badges/` using the filenames in that folder’s README.
+2. Put **certificate** images in `assets/images/certificates/` using the filenames in that folder’s README.
+3. Commit and push — the Certifications page shows them automatically (no HTML edits required).
+
+After merge to `master`, GitHub Pages publishes from the repository root.
