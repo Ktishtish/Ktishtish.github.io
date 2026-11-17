@@ -1,17 +1,29 @@
 # Keziah Tisher — Cybersecurity Portfolio
 
-Static GitHub Pages site: **[https://ktishtish.github.io](https://ktishtish.github.io)**
+Visually rich static GitHub Pages site (no Jekyll / no Minimal Mistakes):
 
-Professional portfolio for a cybersecurity & IT professional covering profile, projects, certifications, current learning, CV download, and contact links.
+**[https://ktishtish.github.io](https://ktishtish.github.io)**
 
-## Sections
+Inspired by modern SOC-style portfolios (terminal navigation, metrics, activity feed, deep multi-page detail).
 
-- About & experience
-- Projects (SOC labs, assessments, compliance tooling)
-- Certifications & badges
-- Currently learning / pursuing
-- CV (PDF)
-- Contact — email, LinkedIn, GitHub
+## Pages
+
+| Path | Content |
+|:---|:---|
+| `index.html` | Hero, metrics, capability snapshot, recent activity, highlight certs, contact |
+| `whoami.html` | Full profile, skill levels, toolchains, education, languages |
+| `experience.html` | ODPC internship timeline + education |
+| `projects.html` | Detailed project writeups + GitHub links |
+| `certifications.html` | Credentials by category + badge slot |
+| `learning.html` | Currently learning / pursuing |
+| `contact.html` | Email, LinkedIn, GitHub, CV |
+
+## Stack
+
+- Plain HTML / CSS / JS
+- `.nojekyll` so GitHub Pages serves files as-is
+- Particles background, tilt cards, reveal-on-scroll
+- CV: `assets/cv/keziah-tisher-cv.pdf`
 
 ## Local preview
 
@@ -21,14 +33,8 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open `http://127.0.0.1:8000`.
 
-## Updating content
+## Updating
 
-| Item | Path |
-|:---|:---|
-| Page content | `index.html` |
-| Styles | `assets/css/site.css` |
-| CV PDF | `assets/cv/keziah-tisher-cv.pdf` |
-| Photo | `assets/images/bio-photo.jpg` |
-| Badge images (optional) | `assets/images/badges/` |
+Edit the HTML pages directly. Drop issuer badge images into `assets/images/badges/` and link them from `certifications.html`. Replace `assets/images/bio-photo.jpg` or the CV PDF as needed.
 
-After merging to `master`, GitHub Pages serves the site from the repository root (`.nojekyll` disables Jekyll processing).
+After merge to `master`, GitHub Pages publishes from the repository root.

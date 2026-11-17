@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>~/Projects · Keziah Tisher</title>
+  <meta name="description" content="Cybersecurity projects — SOC labs, vulnerability assessment, pentest practice, DPIA compliance tooling, and network traffic analysis.">
+  <meta name="theme-color" content="#0b0f19">
+  <link rel="icon" href="assets/images/bio-photo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/soc.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="status"><span class="status-dot"></span> Online · <a class="brand-handle" href="./">Ktishtish</a></div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="term-nav">Menu</button>
+      <nav id="term-nav" class="term-nav" aria-label="Primary">
+        <a href="./" data-path="/">$HOME</a>
+        <a href="whoami.html" data-path="/whoami.html">$ whoami</a>
+        <a href="experience.html" data-path="/experience.html">~/Experience</a>
+        <a href="projects.html" data-path="/projects.html">~/Projects</a>
+        <a href="certifications.html" data-path="/certifications.html">~/Certifications</a>
+        <a href="learning.html" data-path="/learning.html">~/Learning</a>
+        <a href="contact.html" data-path="/contact.html" class="cta">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="shell">
+    <header class="page-hero" id="main">
+      <p class="path">// projects</p>
+      <h1>Projects</h1>
+      <p class="lead">Selected engineering and lab work spanning Security Operations training platforms, application security assessments, penetration testing practice, data-protection compliance systems, and network threat investigation. Offensive or assessment activity is limited to authorized lab environments.</p>
+    </header>
+
+    <section class="section reveal">
+      <div class="feed">
+        <article class="project-card">
+          <div class="meta">
+            <span class="pill">Featured</span>
+            <span>Security Operations</span>
+            <span>Python · FastAPI · React · TypeScript</span>
+          </div>
+          <h3>SOCWatch — AI-Powered SOC Lab</h3>
+          <p>Defensive training platform that builds SOC skills through realistic, simulated phishing campaigns. Analysts practice alert triage, email/header analysis, IOC enrichment, containment, and NIST-aligned incident response — coached by an embedded AI SOC assistant.</p>
+          <h4 style="margin:0.4rem 0;font-size:0.95rem;color:#cbd5e1">What you practice</h4>
+          <ul style="margin:0 0 0.85rem;padding-left:1.15rem;color:var(--muted)">
+            <li>Phishing triage with severity, MITRE tags, and mailbox evidence</li>
+            <li>Email forensics: headers, SPF/DKIM/DMARC, spoof indicators, lookalike domains</li>
+            <li>Threat enrichment via simulated intel lookups</li>
+            <li>Containment actions (block, reset, revoke, isolate) and playbook completion</li>
+            <li>After-action scorecards with improvement guidance</li>
+          </ul>
+          <h4 style="margin:0.4rem 0;font-size:0.95rem;color:#cbd5e1">Scenarios</h4>
+          <ul style="margin:0 0 0.85rem;padding-left:1.15rem;color:var(--muted)">
+            <li>Spear-phishing: fake payroll portal (beginner)</li>
+            <li>BEC: vendor invoice redirect (intermediate)</li>
+            <li>Malicious macro phish → ransomware precursor (advanced)</li>
+          </ul>
+          <div class="tags">
+            <span class="tag-chip">blue-team</span>
+            <span class="tag-chip">phishing</span>
+            <span class="tag-chip">IR</span>
+            <span class="tag-chip">MITRE</span>
+            <span class="tag-chip">AI-coach</span>
+          </div>
+          <a class="card-link" href="https://github.com/Ktishtish/SOC-operations1" target="_blank" rel="noopener noreferrer">github.com/Ktishtish/SOC-operations1 →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="meta">
+            <span class="pill blue">Portfolio</span>
+            <span>Penetration Testing</span>
+            <span>Python</span>
+          </div>
+          <h3>Deathnote Pentest Lab</h3>
+          <p>Hands-on penetration testing practice focused on reconnaissance, vulnerability identification, and structured assessment documentation in authorized environments.</p>
+          <ul style="margin:0 0 0.85rem;padding-left:1.15rem;color:var(--muted)">
+            <li>Reconnaissance and service enumeration workflows</li>
+            <li>Vulnerability analysis using common security tooling</li>
+            <li>Ethical testing notes and portfolio documentation</li>
+          </ul>
+          <div class="tags">
+            <span class="tag-chip">pentest</span>
+            <span class="tag-chip">recon</span>
+            <span class="tag-chip">lab</span>
+          </div>
+          <a class="card-link" href="https://github.com/Ktishtish/Deathnote-Pentest" target="_blank" rel="noopener noreferrer">github.com/Ktishtish/Deathnote-Pentest →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="meta">
+            <span class="pill warn">In progress</span>
+            <span>Application Security</span>
+            <span>Nmap · OWASP ZAP · HTML</span>
+          </div>
+          <h3>Web Application Vulnerability Assessment (FUTURE_CS_01)</h3>
+          <p>Cyber Security track project documenting a full web application vulnerability assessment against a deliberately vulnerable lab application — from environment setup through remediation recommendations and reporting.</p>
+          <h4 style="margin:0.4rem 0;font-size:0.95rem;color:#cbd5e1">Methodology</h4>
+          <ul style="margin:0 0 0.85rem;padding-left:1.15rem;color:var(--muted)">
+            <li>Lab environment setup and reconnaissance</li>
+            <li>Web application mapping and passive security analysis</li>
+            <li>Manual validation and risk classification</li>
+            <li>Remediation analysis and vulnerability reporting</li>
+          </ul>
+          <div class="tags">
+            <span class="tag-chip">OWASP</span>
+            <span class="tag-chip">ZAP</span>
+            <span class="tag-chip">reporting</span>
+            <span class="tag-chip">appsec</span>
+          </div>
+          <a class="card-link" href="https://github.com/Ktishtish/FUTURE_CS_01" target="_blank" rel="noopener noreferrer">github.com/Ktishtish/FUTURE_CS_01 →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="meta">
+            <span class="pill ok">Internship project</span>
+            <span>Data Protection</span>
+            <span>Node.js · Express · PostgreSQL · React</span>
+          </div>
+          <h3>DPIA Compliance Tracker</h3>
+          <p>Compliance management system developed during an internship at the Office of the Data Protection Commissioner to track Data Protection Impact Assessment records and streamline compliance workflows under Kenya’s Data Protection Act (2019).</p>
+          <ul style="margin:0 0 0.85rem;padding-left:1.15rem;color:var(--muted)">
+            <li>JWT-authenticated API for users, clients, assessments, and comments</li>
+            <li>Assessment deadline tracking and pending-status reporting</li>
+            <li>Frontend companion for accessibility of DPIA records</li>
+          </ul>
+          <div class="tags">
+            <span class="tag-chip">DPIA</span>
+            <span class="tag-chip">compliance</span>
+            <span class="tag-chip">Node.js</span>
+            <span class="tag-chip">PostgreSQL</span>
+          </div>
+          <a class="card-link" href="https://github.com/Ktishtish/DPIA-Backend" target="_blank" rel="noopener noreferrer">Backend →</a>
+          &nbsp;·&nbsp;
+          <a class="card-link" href="https://github.com/Ktishtish/DPIA-F" target="_blank" rel="noopener noreferrer">Frontend →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="meta">
+            <span class="pill">Lab</span>
+            <span>Network Security</span>
+            <span>Wireshark · PCAP · DNS · TCP/IP</span>
+          </div>
+          <h3>Network Traffic Analysis &amp; Threat Investigation</h3>
+          <p>PCAP-based investigation of network activity associated with a Windows system to identify suspicious communications, examine protocols, and investigate potential exposure of authentication credentials.</p>
+          <ul style="margin:0 0 0.85rem;padding-left:1.15rem;color:var(--muted)">
+            <li>Protocol hierarchy analysis and DNS/domain identification</li>
+            <li>UDP/TCP port and service investigation</li>
+            <li>TCP stream reconstruction and authentication traffic inspection</li>
+            <li>Display-filter driven isolation of relevant packets</li>
+          </ul>
+          <div class="tags">
+            <span class="tag-chip">Wireshark</span>
+            <span class="tag-chip">PCAP</span>
+            <span class="tag-chip">forensics</span>
+            <span class="tag-chip">network</span>
+          </div>
+          <a class="card-link" href="https://github.com/Ktishtish/Ktishtish" target="_blank" rel="noopener noreferrer">Documented on GitHub profile →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="dhead"><span class="tag">// repos</span><h2>More on GitHub</h2></div>
+      <article class="panel">
+        <p style="margin:0 0 0.85rem;color:var(--muted)">Additional repositories and profile overview are available on GitHub, including travel-management coursework and profile README documentation.</p>
+        <a class="btn btn-primary" href="https://github.com/Ktishtish" target="_blank" rel="noopener noreferrer">github.com/Ktishtish</a>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Keziah Tisher</p>
+      <div class="footer-links">
+        <a href="./">$HOME</a>
+        <a href="certifications.html">certs</a>
+        <a href="learning.html">learning</a>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/particles.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
