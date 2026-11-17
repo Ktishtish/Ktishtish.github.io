@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | Cybersecurity Professional</title>
+<meta name="description" content="Cybersecurity professional in Nairobi, Kenya. Threat intelligence, Zero Trust, SOC automation and data protection.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EAEFF2; --panel:#FFFFFF; --ink:#12263A; --muted:#4F6272; --line:#C9D4DC;
+  --brand:#0B6E69; --brand-ink:#FFFFFF; --warn:#9A6700; --warn-bg:#FBF0CF;
+  --ok-bg:#D7EEEA; --lab-bg:#DCE6F5; --lab:#24457A;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Instrument Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F1A24; --panel:#16252F; --ink:#E6EEF3; --muted:#9FB2C0; --line:#2A3C49;
+  --brand:#4FC3BB; --brand-ink:#08201F; --warn:#F2C14E; --warn-bg:#3A3015;
+  --ok-bg:#12403D; --lab-bg:#1B2F4D; --lab:#A9C4F2;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:var(--brand)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:300px 1fr;gap:56px}
+aside{position:sticky;top:0;align-self:start;padding:48px 0;height:100vh;display:flex;flex-direction:column;gap:28px}
+.id h1{font:700 2.1rem/1.1 var(--head);margin:0 0 8px;letter-spacing:-.02em}
+.id p{margin:0;color:var(--muted)}
+nav ul{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+nav a{display:block;padding:6px 0 6px 16px;margin-left:-2px;border-left:2px solid transparent;color:var(--muted);text-decoration:none;font-weight:500}
+nav a:hover,nav a:focus-visible{color:var(--ink);border-left-color:var(--brand)}
+.links{display:flex;flex-direction:column;gap:8px;margin-top:auto}
+.btn{display:inline-block;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:600;border:1.5px solid var(--brand);color:var(--brand)}
+.btn.solid{background:var(--brand);color:var(--brand-ink)}
+.btn:hover{filter:brightness(1.08)}
+main{padding:48px 0 80px}
+section{padding:0 0 56px}
+h2{font:700 1.6rem/1.2 var(--head);margin:0 0 20px;letter-spacing:-.01em}
+h3{font:600 1.15rem/1.3 var(--head);margin:0 0 6px}
+.lead{font:500 1.55rem/1.4 var(--head);letter-spacing:-.01em;max-width:34ch;margin:0 0 20px}
+p{max-width:66ch;margin:0 0 14px}
+.board{display:grid;gap:14px}
+.proj{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--brand);border-radius:6px;padding:20px 22px}
+.proj.lab{border-left-color:var(--lab)}
+.proj.res{border-left-color:var(--warn)}
+.proj p{margin:0 0 10px;color:var(--muted)}
+.status{display:inline-block;font-size:.85rem;font-weight:600;padding:2px 10px;border-radius:99px;margin-bottom:10px;background:var(--ok-bg);color:var(--brand)}
+.lab .status{background:var(--lab-bg);color:var(--lab)}
+.res .status{background:var(--warn-bg);color:var(--warn)}
+.stack{font-size:.92rem;color:var(--muted)}
+.proj a.repo{font-weight:600}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{padding:0 0 22px 22px;border-left:2px solid var(--line);position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--brand)}
+.timeline .when{color:var(--muted);font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.cred{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.cred b{font-weight:600}
+.cred span{color:var(--muted);font-size:.92rem}
+.cred.badge{align-items:center;text-align:center}
+.cred.badge img{width:96px;height:96px;object-fit:contain}
+.learn{background:var(--panel);border:1px solid var(--line);border-radius:6px}
+.learn div{display:grid;grid-template-columns:minmax(150px,1fr) 2fr;gap:16px;padding:14px 20px;border-top:1px solid var(--line)}
+.learn div:first-child{border-top:0}
+.learn dt{font-weight:600}
+.learn dd{margin:0;color:var(--muted)}
+.contact{display:grid;gap:10px;max-width:420px}
+.contact a{display:flex;justify-content:space-between;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 18px;text-decoration:none;font-weight:600}
+.contact a span{color:var(--muted);font-weight:400}
+.contact a:hover{border-color:var(--brand)}
+footer{color:var(--muted);font-size:.9rem;padding-bottom:40px}
+.note{font-size:.9rem;color:var(--muted)}
+@media (max-width:860px){
+  .wrap{grid-template-columns:1fr;gap:0}
+  aside{position:static;height:auto;padding:32px 0 8px}
+  nav ul{display:flex;flex-wrap:wrap;gap:4px 16px;border:0}
+  nav a{border:0;padding:4px 0;margin:0}
+  .links{flex-direction:row;flex-wrap:wrap;margin-top:0}
+  .learn div{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<aside>
+  <div class="id">
+    <h1>Your Name</h1>
+    <p>Cybersecurity professional<br>Nairobi, Kenya</p>
+  </div>
+  <nav aria-label="Sections">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#credentials">Certifications and badges</a></li>
+      <li><a href="#learning">Currently learning</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="links">
+    <a class="btn solid" href="cv/Your-Name-CV.pdf" download>Download CV</a>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+</aside>
+
+<main id="top">
+
+<section id="about">
+  <p class="lead">I help organisations in Africa detect, understand and stop cyber threats.</p>
+  <p>I am a cybersecurity professional at Revere Technologies Limited, an information security services firm serving Sub-Saharan Africa. My work spans threat intelligence, Zero Trust architecture, security operations and data protection.</p>
+  <p>Outside client work I build tools and run research on the threats facing Kenya&rsquo;s digital financial ecosystem, from fake loan apps to lookalike banking domains.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="board">
+
+    <article class="proj">
+      <span class="status">In progress</span>
+      <h3>Phishing domain and fake loan app monitor</h3>
+      <p>Watches for lookalike domains and fake loan apps that impersonate Kenyan financial brands, so takedown and warning decisions can be made faster.</p>
+      <div class="stack">Python &middot; Certificate transparency logs &middot; Domain similarity scoring</div>
+      <a class="repo" href="https://github.com/YOUR-USERNAME/phishing-monitor">View repository</a>
+    </article>
+
+    <article class="proj">
+      <span class="status">In progress</span>
+      <h3>Agentic SOC simulator</h3>
+      <p>A reproducible simulated security operations centre for benchmarking AI agents. Scenarios are scored consistently, so changes to an agent can be measured and compared.</p>
+      <div class="stack">Python &middot; Scenario specification &middot; Automated scoring</div>
+      <a class="repo" href="https://github.com/YOUR-USERNAME/agentic-soc-simulator">View repository</a>
+    </article>
+
+    <article class="proj lab">
+      <span class="status">Lab proof of concept</span>
+      <h3>Zero Trust and AI firewall on Cloudflare</h3>
+      <p>A lab that applies Zero Trust access and an AI firewall on a single platform. It covers an LLM chatbot, applications that call LLM APIs, and AI agents that use MCP tools. Includes a runbook and dashboard configuration walkthrough.</p>
+      <div class="stack">Cloudflare Zero Trust &middot; AI security &middot; MCP</div>
+    </article>
+
+    <article class="proj res">
+      <span class="status">Research</span>
+      <h3>Cyber threat intelligence strategy against financial fraud in Kenya</h3>
+      <p>A research proposal on how threat intelligence can be organised to reduce fraud across Kenya&rsquo;s digital financial ecosystem.</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <ul class="timeline">
+    <li>
+      <h3>[Your job title], Revere Technologies Limited</h3>
+      <div class="when">[Start year] to present &middot; Nairobi, Kenya</div>
+      <p>[Two or three sentences on what you do and the outcomes you have delivered. Describe the work in general terms and leave out client names.]</p>
+    </li>
+    <li>
+      <h3>[Previous role], [Organisation]</h3>
+      <div class="when">[Years]</div>
+      <p>[What you owned and what changed because of it.]</p>
+    </li>
+    <li>
+      <h3>[Degree], [University]</h3>
+      <div class="when">[Years]</div>
+    </li>
+  </ul>
+</section>
+
+<section id="credentials">
+  <h2>Certifications and badges</h2>
+  <div class="grid">
+    <div class="cred"><b>[Certification name]</b><span>[Issuer] &middot; [Year]</span></div>
+    <div class="cred"><b>[Certification name]</b><span>[Issuer] &middot; [Year]</span></div>
+    <div class="cred"><b>[Certification name]</b><span>[Issuer] &middot; [Year]</span></div>
+    <div class="cred"><b>[Certification name]</b><span>[Issuer] &middot; [Year]</span></div>
+  </div>
+  <h3 style="margin-top:28px">Badges and platforms</h3>
+  <div class="grid">
+    <a class="cred badge" href="https://tryhackme.com/p/YOUR-USERNAME"><img alt="TryHackMe profile badge" src="assets/tryhackme.png"><b>TryHackMe</b></a>
+    <a class="cred badge" href="https://www.credly.com/users/YOUR-USERNAME"><img alt="Credly digital badges" src="assets/credly.png"><b>Credly</b></a>
+    <a class="cred badge" href="https://app.hackthebox.com/users/YOUR-ID"><img alt="Hack The Box profile badge" src="assets/htb.png"><b>Hack The Box</b></a>
+  </div>
+  <p class="note" style="margin-top:12px">Save each badge image in the <code>assets</code> folder and link it to the page that verifies it.</p>
+</section>
+
+<section id="learning">
+  <h2>Currently learning and pursuing</h2>
+  <dl class="learn">
+    <div><dt>AI agent security</dt><dd>Securing LLM apps and agents that call tools through MCP, and testing them with the SOC simulator.</dd></div>
+    <div><dt>Security operations</dt><dd>Detection, triage and response workflows, learned by building a simulated SOC.</dd></div>
+    <div><dt>Zero Trust architecture</dt><dd>Identity-aware access and policy design on Cloudflare.</dd></div>
+    <div><dt>Threat intelligence</dt><dd>Intelligence strategy for financial fraud in East Africa.</dd></div>
+    <div><dt>[Next certification or degree]</dt><dd>[Target date or status]</dd></div>
+  </dl>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Open to conversations about security work, collaboration and research.</p>
+  <div class="contact">
+    <a href="mailto:you@example.com">Email <span>you@example.com</span></a>
+    <a href="https://www.linkedin.com/in/YOUR-USERNAME">LinkedIn <span>/in/your-username</span></a>
+    <a href="https://github.com/YOUR-USERNAME">GitHub <span>@your-username</span></a>
+  </div>
+</section>
+
+<footer>&copy; 2026 Your Name. Built with plain HTML and hosted on GitHub Pages.</footer>
+
+</main>
+</div>
+</body>
+</html>
