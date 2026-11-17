@@ -1,27 +1,34 @@
-# Minimal Mistakes remote theme starter
+# Keziah Tisher — Cybersecurity Portfolio
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Static GitHub Pages site: **[https://ktishtish.github.io](https://ktishtish.github.io)**
 
-Contains basic configuration to get you a site with:
+Professional portfolio for a cybersecurity & IT professional covering profile, projects, certifications, current learning, CV download, and contact links.
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+## Sections
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+- About & experience
+- Projects (SOC labs, assessments, compliance tooling)
+- Certifications & badges
+- Currently learning / pursuing
+- CV (PDF)
+- Contact — email, LinkedIn, GitHub
 
----
+## Local preview
 
-## Troubleshooting
+```bash
+python3 -m http.server 8000 --bind 127.0.0.1
+```
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+Open `http://127.0.0.1:8000`.
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+## Updating content
+
+| Item | Path |
+|:---|:---|
+| Page content | `index.html` |
+| Styles | `assets/css/site.css` |
+| CV PDF | `assets/cv/keziah-tisher-cv.pdf` |
+| Photo | `assets/images/bio-photo.jpg` |
+| Badge images (optional) | `assets/images/badges/` |
+
+After merging to `master`, GitHub Pages serves the site from the repository root (`.nojekyll` disables Jekyll processing).
