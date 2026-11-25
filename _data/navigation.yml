@@ -9,5 +9,7 @@ main:
     url: /tags/
   - title: "Certifications"
     url: /certificates.html
+  - title: "CV"
+    url: /cv/
   - title: "About"
     url: /about/
